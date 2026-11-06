@@ -1,0 +1,275 @@
+PLAN: original_satisficing
+DOMAIN: /content/downward/Domain.pddl
+PROBLEM: /content/downward/Problem.pddl
+PLAN FILE: /content/mars_rover_results/original_satisficing.txt
+
+Type-checking move
+...action passes type checking.
+Type-checking pick-drill
+...action passes type checking.
+Type-checking collect-soft
+...action passes type checking.
+Type-checking collect-hard
+...action passes type checking.
+Type-checking deposit
+...action passes type checking.
+Checking plan: /content/mars_rover_results/original_satisficing.txt
+Plan to validate:
+
+Plan size: 33
+1:
+(move curiosity base sitea)
+ 
+2:
+(collect-soft curiosity rock1 bay1 sitea)
+ 
+3:
+(move curiosity sitea base)
+ 
+4:
+(deposit curiosity rock1 bay1 base)
+ 
+5:
+(move curiosity base siteb)
+ 
+6:
+(move curiosity siteb sited)
+ 
+7:
+(move curiosity sited sitee)
+ 
+8:
+(pick-drill curiosity drill1 sitee)
+ 
+9:
+(move curiosity sitee sited)
+ 
+10:
+(collect-soft curiosity rock4 bay1 sited)
+ 
+11:
+(move curiosity sited siteb)
+ 
+12:
+(move curiosity siteb base)
+ 
+13:
+(deposit curiosity rock4 bay1 base)
+ 
+14:
+(move curiosity base siteb)
+ 
+15:
+(collect-soft curiosity rock2 bay2 siteb)
+ 
+16:
+(move curiosity siteb base)
+ 
+17:
+(deposit curiosity rock2 bay2 base)
+ 
+18:
+(move curiosity base sitea)
+ 
+19:
+(move curiosity sitea sitec)
+ 
+20:
+(collect-hard curiosity rock3 bay1 sitec)
+ 
+21:
+(move curiosity sitec sitea)
+ 
+22:
+(move curiosity sitea base)
+ 
+23:
+(deposit curiosity rock3 bay1 base)
+ 
+24:
+(move curiosity base sitea)
+ 
+25:
+(move curiosity sitea sitec)
+ 
+26:
+(move curiosity sitec sitee)
+ 
+27:
+(move curiosity sitee sitef)
+ 
+28:
+(collect-hard curiosity rock5 bay1 sitef)
+ 
+29:
+(move curiosity sitef sitee)
+ 
+30:
+(move curiosity sitee sitec)
+ 
+31:
+(move curiosity sitec sitea)
+ 
+32:
+(move curiosity sitea base)
+ 
+33:
+(deposit curiosity rock5 bay1 base)
+ 
+
+Plan Validation details
+-----------------------
+
+Checking next happening (time 1)
+Deleting (at curiosity base)
+Adding (at curiosity sitea)
+
+Checking next happening (time 2)
+Deleting (sample-at rock1 sitea)
+Deleting (bay-empty bay1)
+Adding (stored rock1 bay1)
+
+Checking next happening (time 3)
+Deleting (at curiosity sitea)
+Adding (at curiosity base)
+
+Checking next happening (time 4)
+Deleting (stored rock1 bay1)
+Adding (bay-empty bay1)
+Adding (sample-at rock1 base)
+
+Checking next happening (time 5)
+Deleting (at curiosity base)
+Adding (at curiosity siteb)
+
+Checking next happening (time 6)
+Deleting (at curiosity siteb)
+Adding (at curiosity sited)
+
+Checking next happening (time 7)
+Deleting (at curiosity sited)
+Adding (at curiosity sitee)
+
+Checking next happening (time 8)
+Deleting (drill-at drill1 sitee)
+Adding (has-drill curiosity)
+
+Checking next happening (time 9)
+Deleting (at curiosity sitee)
+Adding (at curiosity sited)
+
+Checking next happening (time 10)
+Deleting (sample-at rock4 sited)
+Deleting (bay-empty bay1)
+Adding (stored rock4 bay1)
+
+Checking next happening (time 11)
+Deleting (at curiosity sited)
+Adding (at curiosity siteb)
+
+Checking next happening (time 12)
+Deleting (at curiosity siteb)
+Adding (at curiosity base)
+
+Checking next happening (time 13)
+Deleting (stored rock4 bay1)
+Adding (bay-empty bay1)
+Adding (sample-at rock4 base)
+
+Checking next happening (time 14)
+Deleting (at curiosity base)
+Adding (at curiosity siteb)
+
+Checking next happening (time 15)
+Deleting (sample-at rock2 siteb)
+Deleting (bay-empty bay2)
+Adding (stored rock2 bay2)
+
+Checking next happening (time 16)
+Deleting (at curiosity siteb)
+Adding (at curiosity base)
+
+Checking next happening (time 17)
+Deleting (stored rock2 bay2)
+Adding (bay-empty bay2)
+Adding (sample-at rock2 base)
+
+Checking next happening (time 18)
+Deleting (at curiosity base)
+Adding (at curiosity sitea)
+
+Checking next happening (time 19)
+Deleting (at curiosity sitea)
+Adding (at curiosity sitec)
+
+Checking next happening (time 20)
+Deleting (sample-at rock3 sitec)
+Deleting (bay-empty bay1)
+Adding (stored rock3 bay1)
+
+Checking next happening (time 21)
+Deleting (at curiosity sitec)
+Adding (at curiosity sitea)
+
+Checking next happening (time 22)
+Deleting (at curiosity sitea)
+Adding (at curiosity base)
+
+Checking next happening (time 23)
+Deleting (stored rock3 bay1)
+Adding (bay-empty bay1)
+Adding (sample-at rock3 base)
+
+Checking next happening (time 24)
+Deleting (at curiosity base)
+Adding (at curiosity sitea)
+
+Checking next happening (time 25)
+Deleting (at curiosity sitea)
+Adding (at curiosity sitec)
+
+Checking next happening (time 26)
+Deleting (at curiosity sitec)
+Adding (at curiosity sitee)
+
+Checking next happening (time 27)
+Deleting (at curiosity sitee)
+Adding (at curiosity sitef)
+
+Checking next happening (time 28)
+Deleting (sample-at rock5 sitef)
+Deleting (bay-empty bay1)
+Adding (stored rock5 bay1)
+
+Checking next happening (time 29)
+Deleting (at curiosity sitef)
+Adding (at curiosity sitee)
+
+Checking next happening (time 30)
+Deleting (at curiosity sitee)
+Adding (at curiosity sitec)
+
+Checking next happening (time 31)
+Deleting (at curiosity sitec)
+Adding (at curiosity sitea)
+
+Checking next happening (time 32)
+Deleting (at curiosity sitea)
+Adding (at curiosity base)
+
+Checking next happening (time 33)
+Deleting (stored rock5 bay1)
+Adding (bay-empty bay1)
+Adding (sample-at rock5 base)
+Plan executed successfully - checking goal
+Plan valid
+Final value: 33 
+
+Successful plans:
+Value: 33
+ /content/mars_rover_results/original_satisficing.txt 33 
+
+
+
+
+Return code: 0
