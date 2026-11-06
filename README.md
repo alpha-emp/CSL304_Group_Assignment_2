@@ -1,8 +1,8 @@
 # CSL304_Group_Assignment_2
 
 <div align="center">
-  <h2>Group Assignment 2</h2>
-  <p><strong>Course:</strong> CSL304</p>
+  <h2>Team Name:
+  <strong>Laughing Coffin</strong> </h2>
 </div>
 
 ## Team Members
